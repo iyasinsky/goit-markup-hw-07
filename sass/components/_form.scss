@@ -7,7 +7,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .form__field {
@@ -20,8 +20,8 @@
 .form__field:focus-within .form__input,
 .form__field:focus-within .form__icon,
 .comment:focus-within .comment__area {
-  border-color: var(--accent);
-  fill: var(--accent);
+  border-color: $accent;
+  fill: $accent;
 }
 
 .form__icon {
@@ -67,7 +67,7 @@
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--secondary-text-color);
+  border: 2px solid $secondaryTextColor;
   border-radius: 2px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,12 +75,12 @@
 
 .form__label:hover .form__checkbox,
 .form__label:focus-within .form__checkbox {
-  border-color: var(--accent);
+  border-color: $accent;
 }
 
 .checkbox:checked + .form__checkbox {
-  background-color: var(--accent);
-  border-color: var(--accent);
+  background-color: $accent;
+  border-color: $accent;
   background-image: url('../images/icon-check.svg');
   background-size: contain;
   background-position: center;
@@ -91,5 +91,5 @@
 .form__link {
   display: inline-flex;
   margin-left: 5px;
-  color: var(--accent);
+  color: $accent;
 }

@@ -6,7 +6,7 @@
 }
 
 .contacts__text {
-  color: var(--primary-color);
+  color: $primaryColor;
   margin-bottom: 9px;
 }
 
@@ -22,12 +22,12 @@
 
 .contacts__link {
   text-decoration: none;
-  color: var(--footer-contacts);
+  color: $footerContacts;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link:hover,
 .contacts__link:focus {
-  color: var(--accent);
+  color: $accent;
 }

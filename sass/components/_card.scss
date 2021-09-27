@@ -1,11 +1,11 @@
 .card {
-  background-color: var(--primary-color);
+  background-color: $primaryColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
 
 .card__title {
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -40,12 +40,12 @@
 
   text-decoration: none;
 
-  fill: var(--link-color);
+  fill: $linkColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card__link--color {
-  fill: var(--primary-color);
+  fill: $primaryColor;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -54,6 +54,6 @@
 .card__link:focus,
 .card__link--color:hover,
 .card__link--color:focus {
-  background-color: var(--accent);
-  fill: var(--primary-color);
+  background-color: $accent;
+  fill: $primaryColor;
 }
