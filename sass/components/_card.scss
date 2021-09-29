@@ -41,13 +41,14 @@
   text-decoration: none;
 
   fill: $linkColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  $propertyLocal: fill, background-color;
+  @include transitioned($propertyLocal);
 }
 
 .card__link--color {
   fill: $primaryColor;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitioned(background-color);
 }
 
 .card__link:hover,

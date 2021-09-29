@@ -14,7 +14,7 @@
   height: 50px;
   border: none;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitioned(background-color);
 
   cursor: pointer;
 
@@ -43,7 +43,8 @@
 
   cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  $propertyLocal: color, background-color, box-shadow;
+  @include transitioned($propertyLocal);
 
   &:hover,
   &:focus {
@@ -79,7 +80,7 @@
 
   cursor: pointer;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitioned(fill);
 
   &:hover,
   &:focus {

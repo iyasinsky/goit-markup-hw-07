@@ -29,7 +29,7 @@
   left: 12px;
   bottom: 11px;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitioned(fill);
 }
 
 .form__name {
@@ -44,7 +44,7 @@
   height: 40px;
   outline: none;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitioned(border-color);
 }
 
 .form__label {
@@ -70,7 +70,8 @@
   border: 2px solid $secondaryTextColor;
   border-radius: 2px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  $propertyLocal: background-color, border-color;
+  @include transitioned($propertyLocal);
 }
 
 .form__label:hover .form__checkbox,
